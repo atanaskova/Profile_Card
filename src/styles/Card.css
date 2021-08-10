@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+.bi-pin-map {
+    width: 20px;
+    height: 20px;
+    color: grey;
+}
+
+.card {
+    border: none;
+    perspective: 1000px;
+    height: 450px;
+}
+
+.card-inner {
+    border-color: grey;
+    border-radius: 10px;
+    box-shadow: 0px 7px 7px grey;
+    perspective: 1000px;
+    height: max-content;
+    position: relative;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.text-center {
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+}
+
+::placeholder {
+    font-size: 12px;
+}
+
+.avatar {
+    margin-bottom: 20px;
+    margin-top: 5px;
+}
+
+.input {
+    margin-top: 10px;
+}
+
+.cancel {
+    float: left;
+    background-color: khaki;
+    color: grey;
+    border: none;
+    font-size: 14px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.save {
+    float: right;
+    background-color: khaki;
+    border: none;
+    font-size: 14px;
+    color: grey;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.cancel:hover {
+    background-color: grey;
+    color: white;
+    transform: scale(1.1);
+}
+
+.save:hover {
+    background-color: grey;
+    color: white;
+    transform: scale(1.1);
+}
+
+.card:hover .card-inner {
+    transform: rotateY(180deg);
+}
+
+.card-front, .card-back {
+    backface-visibility: hidden;
+}
+
+.card-back {
+    margin-top: -300px;
+    transform: rotateY(180deg);
+}
+
+input[type="file" i]{
+    float: left;
+    width: min-content;
+    color: grey;
+    font: normal normal bold 10px 'Montserrat', sans-serif;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+.i-front{
+    margin-left: -20px;
+    margin-right: 10px;
+}
+
+.input-location{
+    margin-top: 10px;
+    width: 200px;
+    float: right;
+}
+
+.i-back{
+    display: flex;
+    float: left;
+    margin-top: 20px;
+}
+
+.i-avatar1{
+    display: sticky;
+    margin-top: 20px;
+    width:150px;
+    height: 150px;
+}
+
+.i-avatar2{
+    display: sticky;
+    margin-top: 50px;
+    width: 120px;
+    height: 120px;
+}
